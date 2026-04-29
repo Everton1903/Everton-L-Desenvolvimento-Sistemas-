@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everton L. | Web Developer</title>
+    
+    <style>
+        /* CONFIGURAÇÕES GERAIS */
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        /* LOGOTIPO HÍBRIDO */
+        .logo-container {
+            position: relative;
+            width: 100px; height: 100px;
+            display: flex; justify-content: center; align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-box {
+            width: 75px; height: 75px;
+            background: #1e293b; border: 2px solid #38bdf8;
+            border-radius: 18px; display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); z-index: 2;
+        }
+
+        .logo-text { color: #38bdf8; font-weight: 900; font-size: 22px; letter-spacing: 1px; }
+        .logo-code { color: #64748b; font-size: 14px; font-family: monospace; margin-top: -5px; }
+
+        .orbita {
+            position: absolute; width: 95px; height: 95px;
+            border: 2px solid transparent; border-top: 2px solid #38bdf8; border-bottom: 2px solid #38bdf8;
+            border-radius: 50%; animation: girar 4s linear infinite; opacity: 0.6;
+        }
+
+        @keyframes girar { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+        h1 { font-size: 1.4rem; margin-bottom: 5px; color: #38bdf8; }
+        .subtitulo { font-size: 0.85rem; color: #94a3b8; margin-bottom: 30px; text-align: center; line-height: 1.4; }
+
+        .links-container { width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 25px; }
+
+        h2 { font-size: 1rem; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #334155; padding-bottom: 5px; }
+
+        .link-card {
+            background: #1e293b; border: 1px solid #334155;
+            padding: 16px; text-align: center; text-decoration: none;
+            color: white; border-radius: 12px; font-weight: 600; transition: all 0.3s ease;
+        }
+
+        /* CARDS DE PROJETO */
+        .projeto-card {
+            background: linear-gradient(135deg, #1e293b 0%, #2e1065 100%);
+            border: 1px solid #7c3aed; text-align: left;
+            padding: 20px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 5px;
+        }
+
+        .projeto-treino { background: linear-gradient(135deg, #1e293b 0%, #064e3b 100%); border: 1px solid #10b981; }
+        .autor-tag { background: #7c3aed; color: white; font-size: 10px; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; width: fit-content; }
+        .tag-treino { background: #10b981; }
+
+        /* SERVIÇOS */
+        .servicos-grid { display: grid; gap: 12px; }
+        .servico-card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+        .preco-valor { font-size: 1.1rem; font-weight: 800; color: #38bdf8; }
+
+        /* FORMULÁRIO */
+        .form-orcamento {
+            background: #1e293b; padding: 20px; border-radius: 15px;
+            border: 1px solid #334155; display: flex; flex-direction: column; gap: 12px;
+        }
+
+        .form-orcamento input, .form-orcamento select, .form-orcamento textarea {
+            background: #0f172a; border: 1px solid #334155; border-radius: 8px;
+            padding: 12px; color: white; font-family: inherit; outline: none;
+        }
+
+        .btn-enviar { background: #38bdf8; color: #0f172a; border: none; padding: 15px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+
+        .link-card:active, .btn-enviar:active { transform: scale(0.97); opacity: 0.8; }
+        footer { margin-top: 50px; font-size: 0.7rem; color: #475569; }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <div class="orbita"></div>
+        <div class="logo-box">
+            <span class="logo-text">EL</span>
+            <span class="logo-code">&lt;/&gt;</span>
+        </div>
+    </div>
+
+    <h1>Everton L.</h1>
+    <div class="subtitulo">Criando soluções digitais<br>direto do código para o seu negócio.</div>
+
+    <div class="links-container">
+        
+        <div>
+            <h2>Meus Projetos Autoriais</h2>
+            <a href="https://everton1903.github.io/Josi-Doces-Gourmet/" class="link-card projeto-card" target="_blank">
+                <span class="autor-tag">Desenvolvido por mim</span>
+                <strong class="projeto-titulo">🍰 Josi Doces Gourmet</strong>
+                <span class="projeto-desc">Landing page profissional com foco em conversão.</span>
+                <span style="font-size: 11px; color: #38bdf8;">HTML5 • CSS3 • JavaScript</span>
+            </a>
+
+            <a href="https://everton1903.github.io/Treino-do-Everton-Leite/" class="link-card projeto-card projeto-treino" target="_blank">
+                <span class="autor-tag tag-treino">Web App Funcional</span>
+                <strong class="projeto-titulo">🔥 App de Treino 45 Min</strong>
+                <span class="projeto-desc">Timer inteligente com comandos de voz para calistenia.</span>
+                <span style="font-size: 11px; color: #10b981;">JS Speech API • Wake Lock • CSS Grid</span>
+            </a>
+        </div>
+
+        <div>
+            <h2>Serviços e Investimento</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div style="display:flex; flex-direction:column;"><span style="font-size:0.9rem; font-weight:600;">Cartão Digital</span><span style="font-size:0.75rem; color:#94a3b8;">Link para Bio</span></div>
+                    <div style="text-align:right;"><span style="font-size:0.65rem; color:#38bdf8; display:block;">A PARTIR DE</span><span class="preco-valor">R$ 150</span></div>
+                </div>
+                <div class="servico-card">
+                    <div style="display:flex; flex-direction:column;"><span style="font-size:0.9rem; font-weight:600;">Landing Page</span><span style="font-size:0.75rem; color:#94a3b8;">Alta conversão</span></div>
+                    <div style="text-align:right;"><span style="font-size:0.65rem; color:#38bdf8; display:block;">A PARTIR DE</span><span class="preco-valor">R$ 500</span></div>
+                </div>
+                <div class="servico-card">
+                    <div style="display:flex; flex-direction:column;"><span style="font-size:0.9rem; font-weight:600;">Site Institucional</span><span style="font-size:0.75rem; color:#94a3b8;">Multi-páginas</span></div>
+                    <div style="text-align:right;"><span style="font-size:0.65rem; color:#38bdf8; display:block;">A PARTIR DE</span><span class="preco-valor">R$ 1200</span></div>
+                </div>
+                <div class="servico-card">
+                    <div style="display:flex; flex-direction:column;"><span style="font-size:0.9rem; font-weight:600;">Manutenção</span><span style="font-size:0.75rem; color:#94a3b8;">Ajustes e reparos</span></div>
+                    <div style="text-align:right;"><span style="font-size:0.65rem; color:#38bdf8; display:block;">POR HORA</span><span class="preco-valor">R$ 80</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Solicitar Orçamento</h2>
+            <div class="form-orcamento">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <select id="projeto-tipo">
+                    <option value="" disabled selected>Escolha o tipo de projeto</option>
+                    <option value="Landing Page">Landing Page (Página Única)</option>
+                    <option value="Site Institucional">Site Institucional</option>
+                    <option value="Cartão Digital">Cartão Digital (Link na Bio)</option>
+                    <option value="Manutenção">Manutenção / Ajustes</option>
+                    <option value="Outros">Outros</option>
+                </select>
+                <textarea id="mensagem" rows="3" placeholder="Conte um pouco do que você precisa..."></textarea>
+                <button class="btn-enviar" onclick="enviarOrcamento()">Enviar via WhatsApp</button>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <a href="https://www.linkedin.com/in/everton-l-154940226" class="link-card" target="_blank">Meu LinkedIn Profissional</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>© 2026 • Everton L. Da S. Leite. • Developer</footer>
+
+    <script>
+        function enviarOrcamento() {
+            const nome = document.getElementById('nome').value;
+            const projeto = document.getElementById('projeto-tipo').value;
+            const msg = document.getElementById('mensagem').value;
+            if(nome === "" || projeto === "") { alert("Preencha seu nome e escolha um projeto!"); return; }
+            const texto = `Olá Everton! Me chamo *${nome}*.\n*Interesse:* ${projeto}\n*Detalhes:* ${msg}`;
+            window.open(`https://wa.me/5551985803243?text=${encodeURIComponent(texto)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
