@@ -71,8 +71,20 @@
 
         /* SERVIÇOS */
         .servicos-grid { display: grid; gap: 12px; }
-        .servico-card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
-        .preco-valor { font-size: 1.1rem; font-weight: 800; color: #38bdf8; }
+        .servico-card { 
+            background: #1e293b; 
+            border: 1px solid #334155; 
+            border-radius: 12px; 
+            padding: 15px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+        .servico-card:hover { border-color: #38bdf8; background: #232f45; }
+        .preco-valor { font-size: 0.9rem; font-weight: 700; color: #38bdf8; text-decoration: underline; }
 
         /* FORMULÁRIO */
         .form-orcamento {
@@ -124,29 +136,32 @@
         </div>
 
         <div>
-            <h2>Serviços e Investimento</h2>
+            <h2>Serviços e Consultoria</h2>
             <div class="servicos-grid">
-                <div class="servico-card">
+                <a href="https://wa.me/5551985803243?text=Olá Everton! Gostaria de consultar o valor para um *Cartão Digital*." class="servico-card" target="_blank">
                     <div style="display:flex; flex-direction:column;"><span style="font-size:0.9rem; font-weight:600;">Cartão Digital</span><span style="font-size:0.75rem; color:#94a3b8;">Link para Bio</span></div>
-                    <div style="text-align:right;"><span style="font-size:0.65rem; color:#38bdf8; display:block;">A PARTIR DE</span><span class="preco-valor">R$ 150</span></div>
-                </div>
-                <div class="servico-card">
+                    <div style="text-align:right;"><span class="preco-valor">Consultar Valores</span></div>
+                </a>
+                
+                <a href="https://wa.me/5551985803243?text=Olá Everton! Gostaria de consultar o valor para uma *Landing Page*." class="servico-card" target="_blank">
                     <div style="display:flex; flex-direction:column;"><span style="font-size:0.9rem; font-weight:600;">Landing Page</span><span style="font-size:0.75rem; color:#94a3b8;">Alta conversão</span></div>
-                    <div style="text-align:right;"><span style="font-size:0.65rem; color:#38bdf8; display:block;">A PARTIR DE</span><span class="preco-valor">R$ 500</span></div>
-                </div>
-                <div class="servico-card">
+                    <div style="text-align:right;"><span class="preco-valor">Consultar Valores</span></div>
+                </a>
+
+                <a href="https://wa.me/5551985803243?text=Olá Everton! Gostaria de consultar o valor para um *Site Institucional*." class="servico-card" target="_blank">
                     <div style="display:flex; flex-direction:column;"><span style="font-size:0.9rem; font-weight:600;">Site Institucional</span><span style="font-size:0.75rem; color:#94a3b8;">Multi-páginas</span></div>
-                    <div style="text-align:right;"><span style="font-size:0.65rem; color:#38bdf8; display:block;">A PARTIR DE</span><span class="preco-valor">R$ 1200</span></div>
-                </div>
-                <div class="servico-card">
+                    <div style="text-align:right;"><span class="preco-valor">Consultar Valores</span></div>
+                </a>
+
+                <a href="https://wa.me/5551985803243?text=Olá Everton! Gostaria de consultar o valor para *Manutenção e Ajustes*." class="servico-card" target="_blank">
                     <div style="display:flex; flex-direction:column;"><span style="font-size:0.9rem; font-weight:600;">Manutenção</span><span style="font-size:0.75rem; color:#94a3b8;">Ajustes e reparos</span></div>
-                    <div style="text-align:right;"><span style="font-size:0.65rem; color:#38bdf8; display:block;">POR HORA</span><span class="preco-valor">R$ 80</span></div>
-                </div>
+                    <div style="text-align:right;"><span class="preco-valor">Consultar Valores</span></div>
+                </a>
             </div>
         </div>
 
         <div>
-            <h2>Solicitar Orçamento</h2>
+            <h2>Solicitar Orçamento Personalizado</h2>
             <div class="form-orcamento">
                 <input type="text" id="nome" placeholder="Seu nome" required>
                 <select id="projeto-tipo">
